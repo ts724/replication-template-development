@@ -14,7 +14,8 @@
 /* adjust this as necessary. This works on all OS when running in batch mode, but may not work in interactive mode */
 
 local pwd : pwd
-global rootdir "/home/jovyan/work/workspace"
+local jiraissue nnnn
+global rootdir "/home/jovyan/work/workspace/aearep-`jiraissue'"
 global logdir "${rootdir}/logs"
 cap mkdir "$logdir"
 
