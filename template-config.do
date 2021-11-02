@@ -1,4 +1,5 @@
 /* Template config.do */
+/* Adapted for WholeTale test */
 /* Copy this file to your replication directory if using Stata, e.g.,
     cp template-config.do 12345/codes/config.do
 
@@ -13,7 +14,7 @@
 /* adjust this as necessary. This works on all OS when running in batch mode, but may not work in interactive mode */
 
 local pwd : pwd
-global rootdir "`pwd'"
+global rootdir "/home/jovyan/work/workspace"
 global logdir "${rootdir}/logs"
 cap mkdir "$logdir"
 
